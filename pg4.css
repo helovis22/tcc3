@@ -1,0 +1,71 @@
+/* Garante que o HTML e o BODY ocupem toda a altura da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o corpo da página crescer para ocupar o espaço disponível */
+body {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    background-color: #cab47c;
+    color: #333;
+    width: 100vw;
+}
+
+/* Seu estilo para o header e outras seções permanecem os mesmos */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #346038;
+    box-shadow: 0 2px 4px rgba(127, 168, 50, 0.1);
+}
+.menu {
+    display: flex;
+    gap: 0px;
+    margin-left: 1000px;
+}
+.menu-item {
+    text-decoration: none;
+    color: #cab47c;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.menu-item:hover {
+    color: #346038;
+}
+.name {
+    display: flex;
+}
+.site-name {
+    text-decoration: none;
+    color: #cab47c;
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+#uploaded-image, #display-image {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* O rodapé é empurrado para o final da página */
+footer {
+    background-color: #346038;
+    color: #cab47c;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Empurra o rodapé para o final */
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+

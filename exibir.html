@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Enviada</title>
+    <link rel="stylesheet" href="pg4.css">
+</head>
+<body>
+    <header>
+        <div class="name">
+            <a href="index.html" class="site-name">Oblivion</a>
+        </div>
+        <div class="menu">
+            <a href="index.html" class="menu-item">Início</a>
+        </div>
+    </header>
+    
+    
+    <div class="imagem-enviada">
+        <img id="display-image" alt="Imagem Enviada">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Oblivion-Contato</p>
+            <p>e-mail: oblivion@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Obtém a imagem armazenada no localStorage
+        const savedImage = localStorage.getItem('uploadedImage');
+
+        // Exibe a imagem carregada se ela existir
+        if (savedImage) {
+            document.getElementById('display-image').src = savedImage;
+        } else {
+            alert('Nenhuma imagem foi carregada.');
+        }
+    </script>
+</body>
+</html>
+
+
+
